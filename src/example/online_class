@@ -1,0 +1,15 @@
+package example;
+import java.util.*;
+
+//Linked list because adding at start and middle is faster
+public class online_class {
+	public static void virtual() {
+		List <String> attendance = new LinkedList<>();
+		attendance.add("Anees");
+		attendance.add("Anitha");
+		attendance.add("Bala");
+		attendance.add("Karthi");
+		System.out.println("Attendance: "+attendance);
+	}
+
+}
