@@ -1,0 +1,11 @@
+package example;
+import java.util.*;
+
+//immutable list,which is static , never changes of menu.
+public class Appmenu {
+	public static  void main(String args[]) {
+		List <String> menu = List.of("Home", "Profile", "Settings", "Logout");
+		System.out.println("The app menu: "+ menu);
+	}
+
+}
