@@ -1,0 +1,11 @@
+package set;
+
+public class Form_main {
+	public static void main(String args[]) {
+		Form obj=new Form();
+		obj.form();
+		
+	}
+	
+
+}
