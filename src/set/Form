@@ -1,0 +1,24 @@
+package set;
+import java.util.*;
+
+public class Form {
+	public static void form() {
+		Set<String> check=new HashSet<>();
+		check.add("Anees");
+		check.add("Bala");
+		check.add("Goumi");
+		System.out.println("Enter the Username");
+		Scanner sc=new Scanner(System.in);
+		String username = sc.nextLine();
+		
+		if(check.contains(username)) {
+				System.out.println("The Username is already exits");
+		}
+		else {
+			check.add(username);
+			System.out.println("The Username is Unique and valid");
+		}
+		
+	}
+
+}
