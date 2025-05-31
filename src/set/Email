@@ -1,0 +1,36 @@
+package set;
+import java.util.*;
+
+
+public class Email {
+	public static void validate() {
+		Set <String> check =new LinkedHashSet<>();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Your EmailId");
+		String username1 = sc.nextLine();
+		System.out.println("Enter Your EmailId");
+		String username2 = sc.nextLine();
+		System.out.println("Enter Your EmailId");
+		String username3 = sc.nextLine();
+		check.add(username1);
+		check.add(username2);
+		check.add(username3);
+		
+		System.out.println(check);
+	}
+}
+
+
+package set;
+
+public class Form_main {
+	public static void main(String args[]) {
+	
+		Email obj2=new Email();
+		
+		obj2.validate();
+		
+	}
+	
+
+}
