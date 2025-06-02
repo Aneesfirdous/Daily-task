@@ -1,0 +1,71 @@
+package map;
+
+import java.util.*;
+
+public class mapexample {
+	public static void hashmap() {
+		Map<String, Integer> employeeMap= new HashMap<>();
+		employeeMap.put("Anees", 101);
+		employeeMap.put("Anitha", 101);
+		employeeMap.put("Yoga", 103);
+		employeeMap.put("kavi", 104);
+		
+		employeeMap.put("Anitha", 102);
+		System.out.println("Employee with ID 101: " + employeeMap.get("Anees"));
+		
+		for(Map.Entry<String, Integer> entry : employeeMap.entrySet()) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
+		}
+	}
+	public static void linkedhashmap() {
+		Map<String, Integer> employeeMap= new LinkedHashMap<>();
+		employeeMap.put("Anees", 101);
+		employeeMap.put("Anitha", 102);
+		employeeMap.put("Yoga", 103);
+		employeeMap.put("kavi", 104);
+		
+		
+		System.out.println("Employee with ID 101: " + employeeMap.get("Anees"));
+		
+		for(Map.Entry<String, Integer> entry : employeeMap.entrySet()) 
+		{
+			System.out.println(entry.getKey() + ":" + entry.getValue());
+
+}
+}
+	public static void treemap() {
+		Map<String, Integer> employeeMap= new TreeMap<>();
+		employeeMap.put("Anees", 101);
+		employeeMap.put("Anitha", 102);
+		employeeMap.put("Yoga", 103);
+		employeeMap.put("kavi", 104);
+		
+		
+		System.out.println(employeeMap);
+	}
+	public static void nestedmap() {
+		Map<String,Map<String, Integer>>  Mark= new LinkedHashMap<>();
+		Map<String,Integer> CourseMark = new LinkedHashMap<>();
+		CourseMark.put("Maths", 80);
+		CourseMark.put("Science", 85);
+		
+		Mark.put("Anees", CourseMark);
+		Mark.put("Firdous", CourseMark);
+		System.out.println("Students Marks:" + Mark);
+	}
+}
+
+
+
+package map;
+
+public class mapexamplemain {
+	public static void main(String args[]) {
+		mapexample ob=new mapexample();
+		ob.hashmap();
+		ob.linkedhashmap();
+		ob.treemap();
+		ob.nestedmap();
+	}
+
+}
