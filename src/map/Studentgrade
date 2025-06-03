@@ -1,0 +1,17 @@
+package map;
+import java.util.*;
+
+public class Studentgrade {
+	public static void hashmap() {
+		Map<Integer,String> grades = new HashMap<>();
+		grades.put(01, "A");
+		grades.put(02, "B");
+		grades.put(03, "C");
+		grades.put(04, "B");
+		for(Map.Entry<Integer,String> student : grades.entrySet() ) {
+		System.out.println(student.getKey() + ":" + student.getValue());
+	}
+
+}
+	
+}
