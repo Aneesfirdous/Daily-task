@@ -1,0 +1,17 @@
+package map;
+import java.util.*;
+
+public class productprice {
+	public static void Phashmap() {
+		Map<String,Double> price = new HashMap<>();
+		price.put("P001", 58.9);
+		price.put("P002", 60.2);
+		price.put("P003", 100.3);
+		price.put("P004",98.4 );
+		for(Map.Entry<String,Double> pro_price : price.entrySet() ) {
+		System.out.println(pro_price .getKey() + ":" + pro_price .getValue());
+	}
+
+}
+	
+}
