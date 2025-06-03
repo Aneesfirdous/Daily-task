@@ -1,0 +1,15 @@
+package map;
+import java.util.*;
+
+public class countryvisitors {
+	public static void visitortracker() {
+		Map<String,Integer> vistorscount = new HashMap<>();
+		
+		String[] visitors = {"India", "USA", "Canada", "India", "USA"};
+		for ( String visitor : visitors) {
+			vistorscount.put(visitor, vistorscount.getOrDefault(visitor, 0)+1);
+		}
+		System.out.println("The words in paragragh frequencies are :" + vistorscount);
+	}
+
+}
