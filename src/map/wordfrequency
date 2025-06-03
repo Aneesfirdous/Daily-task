@@ -1,0 +1,15 @@
+package map;
+import java.util.*;
+
+public class wordfrequency {
+	public static void word_frequency() {
+		Map<String,Integer> wordcount = new HashMap<>();
+		String para = "Hello Java is highlevel language Hello Java is platform independent language";
+		String[] words = para.split(" ");
+		for ( String word : words) {
+			wordcount.put(word, wordcount.getOrDefault(word, 0)+1);
+		}
+		System.out.println("The words in paragragh frequencies are :" + wordcount);
+	}
+
+}
