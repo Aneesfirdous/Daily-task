@@ -1,0 +1,22 @@
+package map;
+import java.util.Properties;
+import java.io.IOException;
+import java.io.FileInputStream;
+
+public class configloader {
+	public static void main(String args[]) {
+		Properties config = new Properties();
+		try {
+			config.load(new FileInputStream("config.properties"));
+			String theme = config.getProperty("theme");
+			String lang = config.getProperty("language");
+			System.out.println(" Theme : "  + theme);
+			System.out.println(" Language : "  + lang);
+			}
+		catch(IOException e) {
+			System.out.println(" Error loading confirguration: " +e.getMessage());
+			
+		}
+	}
+
+}
