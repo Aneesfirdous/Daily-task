@@ -1,0 +1,16 @@
+package map;
+
+public class Studentgrademain {
+	public static void main(String args[]) {
+		Studentgrade ob=new Studentgrade();
+		productprice ob1=new productprice();
+		wordfrequency ob2=new wordfrequency();
+		countryvisitors ob3=new countryvisitors();
+		
+		//ob.hashmap();
+		//ob1.Phashmap();
+		//ob2.word_frequency();
+		ob3.visitortracker();
+
+}
+}
