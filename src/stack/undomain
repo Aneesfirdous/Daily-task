@@ -1,0 +1,31 @@
+package stack;
+
+public class undomain { 
+	public static void main(String args[]) {
+		/*Undo undooperation = new Undo();
+		undooperation.Text("Hello");
+		undooperation.Delete("o");
+		undooperation.undo();
+		undooperation.undo();
+		undooperation.undo();*/
+		
+		/*browser_backnav ob = new browser_backnav();
+		ob.visitpage(" home.com");
+		ob.visitpage("about.com");
+		ob.nav();
+		ob.nav();*/
+		
+		/*CpuScheduler scheduler = new CpuScheduler();
+        scheduler.addTask("Task1");
+        scheduler.addTask("Task2");
+        scheduler.executeTask(); 
+        scheduler.executeTask(); */
+		
+		 TrafficSignal signal = new TrafficSignal();
+	        signal.arrive("Car A");
+	        signal.arrive("Car B");
+	        signal.passSignal(); 
+	        signal.passSignal(); 
+	}
+
+}
