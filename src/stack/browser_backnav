@@ -1,0 +1,21 @@
+package stack;
+import java.util.*;
+
+public class browser_backnav {
+	Stack<String> history = new Stack<>();
+	
+	public void visitpage(String url) {
+		System.out.println(" Visiting: "+ url);
+		history.push(url);
+		}
+	public void nav() {
+		if(!history.isEmpty()) {
+			System.out.println("Going back from " + history.pop() );
+		}
+		else {
+			System.out.println("No previous page");
+		}
+	}
+
+
+}
