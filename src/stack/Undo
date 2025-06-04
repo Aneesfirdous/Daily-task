@@ -1,0 +1,22 @@
+package stack;
+import java.util.*;
+
+public class Undo {
+	Stack <String> operations = new Stack<>();
+	public void Text(String text) {
+		operations.push("Text :" + text);
+		}
+	public void Delete(String text) {
+		operations.push("Delete : " +text);
+		}
+
+	public void undo() {
+		if(!operations.isEmpty()) {
+			System.out.println("Undoing --> " +operations.pop() );
+		}
+		else {
+			System.out.println("Nothing to undo");
+		}
+	}
+
+}
