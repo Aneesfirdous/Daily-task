@@ -1,0 +1,20 @@
+package stack;
+import java.util.*;
+
+public class TrafficSignal {
+    Queue<String> carQueue = new LinkedList<>();
+
+    public void arrive(String car) {
+        System.out.println(car + " arrived at the signal");
+        carQueue.offer(car);
+    }
+
+    public void passSignal() {
+        if (!carQueue.isEmpty()) {
+            System.out.println(carQueue.poll() + " passed the signal");
+        } else {
+            System.out.println("No cars in queue");
+        }
+    }
+
+}
