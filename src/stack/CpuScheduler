@@ -1,0 +1,21 @@
+package stack;
+import java.util.*;
+
+
+public class CpuScheduler {
+    Queue<String> taskQueue = new LinkedList<>();
+
+    public void addTask(String task) {
+        System.out.println("Added task: " + task);
+        taskQueue.offer(task);
+    }
+
+    public void executeTask() {
+        if (!taskQueue.isEmpty()) {
+            System.out.println("Executing task: " + taskQueue.poll());
+        } 
+        else {
+            System.out.println("No tasks to execute");
+        }
+    }
+}
